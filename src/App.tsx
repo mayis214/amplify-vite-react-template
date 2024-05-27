@@ -1,10 +1,5 @@
-import { useEffect, useState } from "react";
-import type { Schema } from "../amplify/data/resource";
-import { generateClient } from "aws-amplify/data";
+import {useState } from "react";
 import ChatModal from "./components/ChatModal";
-
-
-const client = generateClient<Schema>();
 
 function App() {
 
