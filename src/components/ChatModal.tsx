@@ -39,11 +39,11 @@ const ChatModal: React.FC<ChatModalProps> = ({ isOpen, onClose }) => {
 
   return (
     <div className={`modal ${isOpen ? 'open' : ''}`}>
-      <div className="modal-content">
-        <button className="close-button" onClick={onClose}>×</button>
-        <div id="ccp-container" style={{ width: '100%', height: '100%' }}></div>
-      </div>
-    </div>
+    <div className="modal-content">
+      <button className="close-button" onClick={onClose}>×</button>
+      <div id="ccp-container" style={{ width: '100%', height: '100%' }}></div>
+    </div>    
+  </div>
   );
 };
 

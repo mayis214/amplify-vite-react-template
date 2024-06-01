@@ -1,5 +1,5 @@
 import {useState } from "react";
-import ChatModal from "./components/ChatModal";
+import WidgetConnect from "./components/WidgetConnect";
 
 function App() {
 
@@ -15,16 +15,18 @@ function App() {
 
 
   return (
+
     <div className="App">
       <header className="App-header">
         <h1>Welcome to My Amazon Connect Chatbot</h1>
         <button onClick={handleOpenModal}>Open Chat</button>
       </header>
       <main>
-        <ChatModal isOpen={isModalOpen} onClose={handleCloseModal} />
+        <WidgetConnect isOpen={isModalOpen} onClose={handleCloseModal} />
       </main>
     </div>
   );
 }
 
 export default App;
+
