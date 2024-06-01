@@ -1,5 +1,4 @@
 import { DynamoDB } from 'aws-sdk';
-
 const dynamodb = new DynamoDB();
 
 // Generar un nombre aleatorio para la tabla
