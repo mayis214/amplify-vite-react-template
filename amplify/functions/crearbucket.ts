@@ -1,24 +1,18 @@
-const aws = require('aws-sdk');
+import { S3 } from 'aws-sdk';
 
-exports.handler = sync (event) => {
+async function createS3Bucket() {
 
-  const s3 = new aws.S3();
-  
-  const bucketParams = {
-    Bucket : process.env.BUCKET_NAME
-  };
+  const s3 = new S3();
 
   try {
-    const data = await s3.createBucket(bucketParams).promise();
-    return {
-      statusCode: 200,
-      body: JSON.stringify(data)
-    }
-  } catch (err) {
-    return {
-      statusCode: 500,
-      body: JSON.stringify(err)
-    }
+    await s3.createBucket({
+      Bucket: 'my-bucket-name'
+    }).promise();
+
+    console.log('Bucket created successfully!');
+
+  } catch (error) {
+    console.error('Error creating bucket', error);  
   }
 
-};
+}
