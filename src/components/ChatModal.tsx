@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import 'amazon-connect-streams';
 import './ChatModal.css'; // We'll define styles for the modal here
 

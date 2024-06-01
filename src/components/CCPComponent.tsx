@@ -1,4 +1,4 @@
-import react,{useEffect} from 'react';
+/*import react,{useEffect} from 'react';
 import 'amazon-connect-streams';
 
 const CCPComponent: React.FC = () => {
@@ -35,3 +35,5 @@ const CCPComponent: React.FC = () => {
   };
   
   export default CCPComponent;
+
+  */
