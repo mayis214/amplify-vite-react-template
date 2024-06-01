@@ -1,6 +1,6 @@
 const aws = require('aws-sdk');
 
-exports.handler = async (event) => {
+exports.handler = sync (event) => {
 
   const s3 = new aws.S3();
   
