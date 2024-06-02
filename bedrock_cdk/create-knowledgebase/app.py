@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import os
-
 import aws_cdk as cdk
 
 from create_knowledgebase.create_knowledgebase_stack import CreateKnowledgebaseStack
