@@ -3,11 +3,11 @@ import os
 
 import aws_cdk as cdk
 
-from bedrock_cdk.bedrock_cdk_stack import BedrockCdkStack
+from create_knowledgebase.create_knowledgebase_stack import CreateKnowledgebaseStack
 
 
 app = cdk.App()
-BedrockCdkStack(app, "BedrockCdkStack",
+CreateKnowledgebaseStack(app, "CreateKnowledgebaseStack",
     # If you don't specify 'env', this stack will be environment-agnostic.
     # Account/Region-dependent features and context lookups will not work,
     # but a single synthesized template can be deployed anywhere.
